@@ -11,6 +11,7 @@
 		4D71914B273985CA002A0587 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71914A273985CA002A0587 /* ContentView.swift */; };
 		4D71914D273985D2002A0587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D71914C273985D2002A0587 /* Assets.xcassets */; };
 		4D719150273985D2002A0587 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D71914F273985D2002A0587 /* Preview Assets.xcassets */; };
+		4D71915727398608002A0587 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71915627398608002A0587 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4D71914A273985CA002A0587 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D71914C273985D2002A0587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D71914F273985D2002A0587 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D71915627398608002A0587 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				4D719148273985CA002A0587 /* TradingCardsApp.swift */,
-				4D71914A273985CA002A0587 /* ContentView.swift */,
+				4D7191582739862F002A0587 /* Views */,
 				4D71914C273985D2002A0587 /* Assets.xcassets */,
 				4D71914E273985D2002A0587 /* Preview Content */,
 			);
@@ -65,6 +67,15 @@
 				4D71914F273985D2002A0587 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D7191582739862F002A0587 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D71914A273985CA002A0587 /* ContentView.swift */,
+				4D71915627398608002A0587 /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D71914B273985CA002A0587 /* ContentView.swift in Sources */,
+				4D71915727398608002A0587 /* DetailView.swift in Sources */,
 				4D719149273985CA002A0587 /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
