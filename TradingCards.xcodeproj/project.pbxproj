@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4D719149273985CA002A0587 /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D719148273985CA002A0587 /* TradingCardsApp.swift */; };
-		4D71914B273985CA002A0587 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71914A273985CA002A0587 /* ContentView.swift */; };
+		4D71914B273985CA002A0587 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71914A273985CA002A0587 /* DetailView.swift */; };
 		4D71914D273985D2002A0587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D71914C273985D2002A0587 /* Assets.xcassets */; };
 		4D719150273985D2002A0587 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D71914F273985D2002A0587 /* Preview Assets.xcassets */; };
-		4D71915727398608002A0587 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71915627398608002A0587 /* DetailView.swift */; };
+		4D71915727398608002A0587 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71915627398608002A0587 /* PlayerListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D719145273985CA002A0587 /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D719148273985CA002A0587 /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
-		4D71914A273985CA002A0587 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D71914A273985CA002A0587 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4D71914C273985D2002A0587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D71914F273985D2002A0587 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4D71915627398608002A0587 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4D71915627398608002A0587 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +72,18 @@
 		4D7191582739862F002A0587 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4D71914A273985CA002A0587 /* ContentView.swift */,
-				4D71915627398608002A0587 /* DetailView.swift */,
+				4D71915627398608002A0587 /* PlayerListView.swift */,
+				4D71914A273985CA002A0587 /* DetailView.swift */,
+				4D7191592739FF24002A0587 /* Model */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4D7191592739FF24002A0587 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D71914B273985CA002A0587 /* ContentView.swift in Sources */,
-				4D71915727398608002A0587 /* DetailView.swift in Sources */,
+				4D71914B273985CA002A0587 /* DetailView.swift in Sources */,
+				4D71915727398608002A0587 /* PlayerListView.swift in Sources */,
 				4D719149273985CA002A0587 /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
