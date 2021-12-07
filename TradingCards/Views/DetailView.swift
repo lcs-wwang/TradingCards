@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct DetailView : View {
+    let thisPlayer: Players
     var body: some View {
         ZStack{
-            Color.purple
+            Color("LakersColour")
             HStack{
                 Color.white
                     .padding()
                     .frame(width: 60, height: 1000)
                 VStack{
-                    Color.purple
+                    Color("LakersColour")
                         .padding()
                         .frame(width: 300, height: 1000)
                     Spacer()
@@ -35,45 +36,80 @@ struct DetailView : View {
             }
             VStack{
                 ZStack{
-                    Color.gray
-                        .padding()
-                        .frame(width: 400, height: 800)
-                  
                     
-                    Text("LeBron James")
-                    .font(Font.custom("helvetica Neue", size: 25))
-                    .padding(.bottom, 730)
+                   
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .fill(Color.gray)
+                        .frame(width: 370, height: 400)
+                        .padding(.bottom, 400)
+                    
                     HStack{
-                        Image("lebron james")
+                        Image(thisPlayer.imageId)
                             .resizable()
                             .frame(width: 150, height: 150)
-                            .border(Color.white)
-                            .padding(.bottom,480)
-                            .padding(.leading, 325)
-                        Spacer()
+                            .cornerRadius(25.0)
+                            .padding(.bottom,580)
+                            .padding(.leading,3)
+                                
                         
-
+                     
+                        HStack{
+                            VStack(alignment:.leading){
+                                Text(thisPlayer.Age)
+                                Text(thisPlayer.Position)
+                                Text(thisPlayer.Ppg)
+                                Text(thisPlayer.Rpg)
+                                    .font(Font.custom("Arial", size: 12))
+                                    
+                            }
+                            VStack{
+                                Text(thisPlayer.Height)
+                                Text(thisPlayer.Weight)
+                                Text(thisPlayer.Apg)
+                                Text(thisPlayer.Bpg)
+                                    .font(Font.custom("Arial", size: 12))
+                                    
+                            }
+                        }
+                        .padding(.bottom, 570)
                         
                     }
-                    Color.white
-                        .frame(width:360, height: 500)
-                        .padding(.top,270)
-                    Text("Lebron James")
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .fill(Color.white)
+                        .frame(width: 370, height: 500)
+                        .padding(.top, 350)
+                    
+                    
+                    RoundedRectangle(cornerRadius: 45.0)
+                        .fill(Color.purple)
+                        .frame(width: 370, height: 250)
+                        .padding(.bottom, 40)
+                    Text(thisPlayer.PlayersName)
                         .fontWeight(.black)
                         .font(Font.custom("helvetica Neue", size: 40))
-                        .padding(.bottom,150)
+                        .padding(.bottom,240)
                     Text("Los Angeles Lakers")
-                        .padding(.bottom,70)
+                        .padding(.bottom,160)
                     Color.yellow
                         .frame(width:270, height: 5)
+                        .padding(.bottom,130)
                     
-                    Text("LeBron Raymone James Sr. is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association.")
+                    Image(thisPlayer.imageMid)
+                        .resizable()
+                        .frame(width: 250, height: 150)
+                        .cornerRadius(25.0)
+                        .padding(.top,40)
+                    
+                    Text(thisPlayer.description)
                         .font(Font.custom("Arial", size: 20))
-                        .padding(.top,100)
+                        .padding(.top,480)
+                        .padding(.horizontal, 340)
                     
                     Image("Lakers Logo")
-                        
-                        .padding(.top,630)
+                        .resizable()
+                        .frame(width: 350, height: 90)
+                        .padding(.top,750)
                     
                 }
             }
@@ -83,6 +119,6 @@ struct DetailView : View {
 
 struct DetailView_Preview: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(thisPlayer: listOfPlayers.first!)
     }
 }
